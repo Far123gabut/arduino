@@ -3,40 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meme Starter</title>
+  <title>Meme Starter x3</title>
   <style>
     body {
       text-align: center;
-      background: #111;
-      color: white;
+      background: #0f0f0f;
+      color: #fff;
       font-family: sans-serif;
       margin-top: 100px;
     }
     button {
-      background: #4CAF50;
+      background: #ff4444;
       color: white;
       font-size: 24px;
       padding: 15px 40px;
       border: none;
       border-radius: 10px;
       cursor: pointer;
+      transition: 0.2s;
     }
     button:hover {
-      background: #45a049;
+      background: #ff6666;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <h1>🔥 Meme Starter 🔥</h1>
-  <p>Klik tombol di bawah untuk menambah tab YouTube baru!</p>
+  <h1>🔥 MEME LAUNCHER 3x TAB 🔥</h1>
+  <p>Klik tombol di bawah buat buka 3 tab YouTube sekaligus!</p>
   <button onclick="startMeme()">MULAI</button>
 
   <script>
     function startMeme() {
-      const link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-      window.open(link, '_blank'); // buka tab baru
-       const link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-      window.open(link, '_blank'); // buka tab baru
+      // 3 link YouTube (bebas ganti bro)
+      const links = [
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "https://www.youtube.com/watch?v=ub82Xb1C8os",
+        "https://www.youtube.com/watch?v=j5a0jTc9S10"
+      ];
+
+      // buka 3 tab baru
+      links.forEach(link => {
+        window.open(link, '_blank');
+      });
     }
   </script>
 </body>
