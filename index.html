@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Starter</title>
+  <style>
+    body {
+      text-align: center;
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+      margin-top: 100px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      font-size: 24px;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 Meme Starter 🔥</h1>
+  <p>Klik tombol di bawah untuk menambah tab YouTube baru!</p>
+  <button onclick="startMeme()">MULAI</button>
+
+  <script>
+    function startMeme() {
+      const link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      window.open(link, '_blank'); // buka tab baru
+    }
+  </script>
+</body>
+</html>
